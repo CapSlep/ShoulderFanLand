@@ -59,7 +59,7 @@ const checkoutInit = () => {
   if (false) {
     checkoutOfferSize.innerText = `${cart.main.size}: ${lsGetSelectedSize()}`;
   } else {
-    checkoutOfferSize.remove();
+    checkoutOfferSize?.remove();
   }
   checkoutOldPrice.innerText = cart.main.oldPrice;
   checkoutNewPrice.innerText = cart.main.newPrice;

@@ -227,4 +227,86 @@ $(document).ready(function () {
 		checkoutInit();
 	});
 
+
+	// if (localStorage.filled_form) {
+	// 	let arr = JSON.parse(localStorage.filled_form);
+	// 	arr.forEach(el => {
+	// 		document.getElementById(el[0]).value = el[1];
+	// 	});
+	// }
+
+
+	// let finalForm = document.querySelector('#checkoutContent');
+	// if (finalForm) {
+	// 	finalForm.addEventListener('submit', function (e) {
+	// 		console.log('submit');
+	// 		let countryCode = "+51";
+
+	// 		// Prevent the form from submitting
+	// 		e.preventDefault();
+
+	// 		// Add your custom JavaScript code here to execute when the form is submitted successfully
+	// 		// For example:
+	// 		// fbq('track', 'InitiateCheckout');
+	// 		console.log('Form submitted successfully!');
+
+	// 		// Get values from input fields
+	// 		var firstName = document.getElementById('nameField').value;
+	// 		var lastName = document.getElementById('familyField').value;
+	// 		var address = document.getElementById('addressField').value;
+	// 		var zip = document.getElementById('zipField').value;
+	// 		var city = document.getElementById('cityField').value;
+	// 		var phone = document.getElementById('phoneField').value;
+	// 		var email = document.getElementById('emailField').value;
+
+	// 		// Get country code
+
+	// 		// Get the redirect link
+	// 		let redirectLink = document.querySelector('.redirectLink').href;
+	// 		// let  = redirectLinkElement.href;
+
+	// 		// Check if the redirect link already has parameters
+	// 		var separator = redirectLink.includes('?') ? '&' : '?';
+
+	// 		// Construct the redirect link with form values as parameters
+	// 		var constructedLink = redirectLink + separator +
+	// 			"first_name=" + encodeURIComponent(firstName) +
+	// 			"&last_name=" + encodeURIComponent(lastName) +
+	// 			"&address=" + encodeURIComponent(address) +
+	// 			"&zip=" + encodeURIComponent(zip) +
+	// 			"&city=" + encodeURIComponent(city) +
+	// 			"&phone=" + encodeURIComponent(countryCode + phone) +
+	// 			"&email=" + encodeURIComponent(email);
+
+	// 		let arr = [['nameField', firstName],
+	// 		['familyField', lastName],
+	// 		['addressField', address],
+	// 		['zipField', zip],
+	// 		['phoneField', phone],
+	// 		['cityField', city],
+	// 		['emailField', email]];
+
+	// 		localStorage.setItem('filled_form', JSON.stringify(arr));
+
+	// 		// Update the href attribute of the redirect link
+	// 		// redirectLinkElement.href = constructedLink;
+	// 		// let preloader = document.getElementById('preloader');
+	// 		// preloader.style.opacity = 1;
+	// 		// preloader.style.display = "flex";
+	// 		// preloader.querySelector('.info_text').innerHTML = "Espera un momento, te estamos redirigiendo al formulario de pago..."
+
+	// 		// setTimeout(() => {
+	// 		enableLoader();
+	// 		window.location.href = constructedLink;
+
+	// 		// }, 500);
+
+
+
+
+	// 		console.log('Form submitted successfully!', constructedLink);
+	// 	});
+
+	// }
+
 });
