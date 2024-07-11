@@ -457,16 +457,16 @@ const mainInit = () => {
   notificationsInit();
 };
 
-setTimeout(() => {
-  if (localStorage.getItem("__is_checkout") != null) {
-    openCheckout();
-    checkoutInit();
-  } else {
-    openMain();
-    mainInit();
-  }
-  disableLoader();
-}, 1500);
+// setTimeout(() => {
+//   if (localStorage.getItem("__is_checkout") != null) {
+//     openCheckout();
+//     checkoutInit();
+//   } else {
+//     openMain();
+//     mainInit();
+//   }
+//   disableLoader();
+// }, 1500);
 
 
 window.onload = () => {
